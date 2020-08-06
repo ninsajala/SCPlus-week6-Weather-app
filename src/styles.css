@@ -1,0 +1,134 @@
+.container-sm {
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    font-family: 'Kulim Park', sans-serif;
+ 
+}
+h1 {
+    text-transform: capitalize;
+}
+h1, h2 {
+    font-size: 30px;
+    font-family: 'Fredoka One', cursive;
+}
+#celsius-fahrenheit {
+    font-size: 30px;
+    font-family: 'Fredoka One', cursive;
+    color: black;
+}
+
+h3 {
+    font-size: 20px;
+}
+p, li, .com-hour, .sun-times{
+    font-size: 18px;
+}
+div {
+    text-align: center;
+}
+form {
+    text-align: left;
+    margin: 20px 30px;
+}
+input {
+    border-radius: 10px;
+    padding: 3px 3px;
+    margin: 0px 5px;
+    width: 75%;
+}
+ul {
+    margin: 15px 15px;
+    text-align: center;
+}
+li {
+    list-style-type: none
+}
+li, .com-hour, .sun-times, .submitButton {
+    transition: 150ms ease-in-out;
+
+}
+li:hover, .com-hour:hover, .sun-times:hover{
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    box-shadow: 2px 1px 3px grey;
+
+}
+
+.col {
+    text-align: center;
+}
+
+.current-weather {
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    border-radius: 30px;
+    margin: 30px 30px 0px 30px;
+    padding: 10px 20px;
+
+
+}
+.current-weather-icon {
+    width: 90px;
+   
+}
+.coming-hours {
+    margin: 15px 15px;
+}
+.update {
+    font-size: 15px;
+    margin: 0;
+}
+.com-hour {
+    margin: 0 5px;
+    border-radius: 10px;
+}
+.com-hour img {
+    width: 30px;
+}
+.conditions {
+    text-align: left;
+    margin: 5px 30px 0px 20px;
+    border-radius: 15px;
+}
+.conditions img {
+    width: 40px;
+}
+
+.sun-times img {
+    width: 60px;
+}
+.sun-times {
+    margin: 10px 30px;
+    border-radius: 20px;
+}
+.searchBar {
+    width: 230px;
+    font-size: 18px;
+}
+.submitButton {
+    border-radius: 20px;
+    background:#f09819;
+    width: 80px;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.submitButton:hover {
+    background: white;
+    color: #f09819;
+    box-shadow: 2px 1px 3px grey;
+}
+
+.ul-title {
+    margin: 0px 15px; 
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.forecast {
+    width: 100px;   
+    padding: 10px;
+    margin: 10px 15px; 
+    border-radius: 20px;
+}
+.forecast img {
+    width: 60px;
+}

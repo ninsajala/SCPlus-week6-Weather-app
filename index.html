@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nina's Weatherapp</title>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="src/styles.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+      <div class="container-sm">
+   <div class="row">
+       <div class="col-6">
+    <div class="current-weather">
+        <a href="#" id="current-location">Current location</a>
+        <h1>
+      Piet
+    </h1>
+    <p id="date">Thursday<br>
+    July 23, 2020<br>
+<small>15:14</small></p>
+<h2><span id="temp">22</span>
+    <small><span id="celsius">°C</span> 
+</h2><br>
+    <img class="current-weather-icon" src="images/cloudy-sunny.png" alt="Cloudy with some sun">
+    <h3><span id="min-today">16</span>°C/<strong><span id="max-today">22</span>°C</strong></h3>
+</div>
+    <div class="row coming-hours">
+        <div class="col com-hour">
+            <img src="images/cloudy-sunny.png" alt="Cloudy with some sun"><br>
+            16h<br>
+            <strong>23°C</strong></div>
+        <div class="col com-hour">
+            <img src="images/cloudy-sunny.png" alt="Cloudy with some sun"><br>
+            17h<br>
+        <strong>22°C</strong></div>
+        <div class="col com-hour">
+            <img src="images/cloudy-sunny.png" alt="Cloudy with some sun"><br>
+            18h<br>
+        <strong>22°C</strong></div>
+        <div class="col com-hour">
+            <img src="images/cloudy-sunny.png" alt="Cloudy with some sun"><br>
+            19h<br>
+        <strong>20°C</strong></div>
+        <div class="col com-hour">
+            <img src="images/cloudy-sunny.png" alt="Cloudy with some sun"><br>
+            20h<br>
+        <strong> 19°C</strong></div>
+    </div>
+    <ul class="conditions-ul">
+        <li class="conditions">
+            <img src="images/wind.png" alt="Wind icon"> <strong>Wind: </strong><span id="wind-speed">28</span> km/h
+        </li>
+        <li class="conditions">
+            <img src="images/humidity.png" alt="Humidity icon"> <strong>Humidity:</strong> <span id="humidity">43</span>%
+        </li>
+    </ul>
+    <div class="row">
+        <div class="col-4 sun-times">
+            <img src="images/sunrise.png" alt="Sunrise Icon"><br>
+           <span id="sunrise">05:52</span>
+        </div>
+        <div class="col-4 sun-times">
+            <img src="images/sunset.png" alt="Sunset Icon"><br>
+           <span id="sunset">21z:44</span> 
+        </div>
+    </div>
+    <form id="search-location">
+        <input class="searchBar" id="search-bar" type="text" placeholder="Search location">
+        <input class="submitButton" type="submit" value="submit"> 
+    </form>
+</div>
+<div class="col-2">
+    
+</div>
+    <div class="col-4">
+        <ul class="forecast-ul"> <div class="ul-title">Forecast</div><br>
+            <li class="forecast">
+                July 24 <br>
+                <img src="images/cloudy-sunny.png" alt="Cloudy with some sun"><br>
+            <strong> 13°C/19°C</strong>
+            </li>
+            <li class="forecast">
+                July 25 <br>
+                <img src="images/shower.png" alt="Rainy"><br>
+            <strong>12°C/17°C</strong>
+            </li>
+            <li class="forecast">
+                July 26 <br>
+                <img src="images/shower-sun.png" alt="Rainy with some sun"><br>
+            <strong>14°C/22°C</strong>
+            </li>
+            <li class="forecast">
+                July 27 <br>
+                <img src="images/cloudy-sunny.png" alt="Cloudy with some sun"><br>
+            <strong> 15°C/22°C</strong>
+            </li>
+            <li class="forecast">
+                July 28 <br>
+                <img src="images/sunny.png" alt="Sunny"><br>
+            <strong>16°C/24°C</strong>
+            </li>
+        </ul>
+        </div>
+</div>
+</div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
